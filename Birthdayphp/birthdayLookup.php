@@ -19,10 +19,13 @@
 
     $searchFirst = $_GET['firstName'];
     $searchLast = $_GET['lastName'];
+    
 
     echo "searchFirst = " . $searchFirst . "<br>";
     echo "searchLast = " . $searchLast . "<br>";
     echo "<br>";
+    echo "testing";
+
 
     /*
      * read json file
