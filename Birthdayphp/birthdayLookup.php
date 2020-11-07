@@ -58,7 +58,7 @@
 
         if ($fullName == $record['name']){
             echo "<br>";
-            echo "Birthday of " . $fullName. " ". $record['birthday'];
+            echo "Birthday of " . $fullName. " is ". $record['birthday'];
             echo "<br>";
             return;
         }
