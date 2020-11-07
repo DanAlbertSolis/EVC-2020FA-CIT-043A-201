@@ -50,24 +50,19 @@
 
     
     for ($i = 0; $i < count($arrData); $i++) {
-
         // get a record
         $record = $arrData[$i];
 
         // print the name and birthday
-        echo $record['name'] . " " . $record['birthday'];
+       // echo $record['name'] . " " . $record['birthday'];
 
         if ($fullName == $record['name']){
-
             echo "<br>";
-            echo $record['birthday']." <<< Birthday of ".$fullName;
+            echo "Birthday of " . $fullName. " ". $record['birthday'];
             echo "<br>";
             return;
         }
-        else {
-            echo "<br>";
-        }
-
+        
     }
 
     // close file
