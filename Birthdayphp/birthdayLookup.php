@@ -60,8 +60,7 @@
             echo "<br>";
             echo "Birthday of " . $fullName. " is ". $record['birthday'];
             echo "<br>";
-            echo "Goodbye";
-
+            echo "Goodbye!";
             return;
         }
         
