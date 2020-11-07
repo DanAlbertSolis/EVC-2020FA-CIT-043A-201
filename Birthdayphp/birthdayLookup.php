@@ -19,12 +19,19 @@
 
     $searchFirst = $_GET['firstName'];
     $searchLast = $_GET['lastName'];
+
+    $fullName = $searchFirst . " " . $searchLast;
+
+    
+    //echo $fullName;
+    //echo "<br>";
+    
+
     
 
     echo "searchFirst = " . $searchFirst . "<br>";
     echo "searchLast = " . $searchLast . "<br>";
     echo "<br>";
-    echo "testing";
 
 
     /*
@@ -49,10 +56,15 @@
 
         // print the name and birthday
         echo $record['name'] . " " . $record['birthday'];
-        echo "<br>";
 
-        if ($searchFirst == $record){
-            echo $record['name'] . " " . $record['birthday'];
+        if ($fullName == $record['name']){
+
+            echo "<br>";
+            echo $record['birthday']." <<< Birthday of ".$fullName;
+            echo "<br>";
+            return;
+        }
+        else {
             echo "<br>";
         }
 
