@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- 
+    HTML example form
+    Gabriel Solomon
+    2020
+-->
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="birthdayStyles.css">
+        <title>Birthday Lookup Assignment</title>
+    </head>
+
+    <body>
+        
+        <div class="headerFlexContainer">
+            <img src="evcLogoSmall.png" id="evcLogo" alt="Evergreen Valley College">
+            <h1>Birthday Lookup</h1>
+        </div>
+
+        <div id="pageElements">
+
+            <form action="birthdayLookup.php" method="GET">
+    
+                <div class="formFlexContainer">
+                    <div class="formRowContainer">
+
+                        <div class="formCol">
+                            <div class="formRow">First Name:</div>
+                            <div class="formRow">Last Name:</div>
+                        </div>
+
+                        <div class="formCol">
+                            <div class="formRow"><input type="text" name="firstName"></div>
+                            <div class="formRow"><input type="text" name="lastName"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="formRowContainer">
+                    <input id="searchButton" type="submit" value="Search">
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+    
+</html>
